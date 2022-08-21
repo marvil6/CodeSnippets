@@ -1,4 +1,4 @@
-//
+// Image 1
 package co.marvil.centr
 
 @RuntimePermissions
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 //
 
 
-//
+// Image 2
 @OnShowRationale(android.Manifest.permission.CAMERA)
 fun showRationaleForCamera(request: PermissionRequest) {
     getSharedPreferences("settings", Context.MODE_PRIVATE).edit().putBoolean("hasShownCameraRationale", true).apply()
@@ -30,7 +30,7 @@ fun showRationaleForCamera(request: PermissionRequest) {
 }
 //
 
-//
+// Image 3
 @OnNeverAskAgain(android.Manifest.permission.CAMERA)
 fun neverAskAgainForCamera() {
     AlertDialog.Builder(this, R.style.AlertDialogCentr)
@@ -47,7 +47,7 @@ fun neverAskAgainForCamera() {
 }
 //
 
-//
+// Image 4
 override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
     super.onRequestPermissionsResult(requestCode, permissions, grantResults); onRequestPermissionsResult(requestCode, grantResults)
 
